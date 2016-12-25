@@ -1,0 +1,50 @@
+{
+  "name": "react-baseline",
+  "version": "1.0.0",
+  "description": "Starter app for React and Redux client-side",
+  "private": true,
+  "author": "Matt Morgan",
+  "license": "MIT",
+  "devDependencies": {
+    "colors": "1.1.2",
+    "enzyme": "^2.6.0",
+    "expect": "1.20.2",
+    "mocha": "3.2.0",
+    "nock": "9.0.2",
+    "npm-run-all": "3.1.2",
+    "react-addons-test-utils": "^15.4.1",
+    "react-scripts": "^0.8.4",
+    "react-test-renderer": "^15.4.1",
+    "redux-mock-store": "1.2.1",
+    "rimraf": "2.5.4"
+  },
+  "dependencies": {
+    "babel-polyfill": "6.16.0",
+    "bootstrap": "3.3.7",
+    "jquery": "^3.1.1",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-redux": "4.4.6",
+    "react-router": "3.0.0",
+    "react-router-redux": "4.0.7",
+    "react-widgets": "^3.4.5",
+    "redux": "3.6.0",
+    "redux-immutable-state-invariant": "^1.2.4",
+    "redux-thunk": "2.1.0",
+    "toastr": "2.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "lint": "./node_modules/.bin/eslint -c .eslintrc.js --fix --ext js --ext jsx src; exit 0",
+    "clean-dist": "npm run remove-dist && mkdir dist",
+    "remove-dist": "node_modules/.bin/rimraf ./dist",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:matthewmorgan/react-baseline.git"
+  }
+}
